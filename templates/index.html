@@ -3,13 +3,13 @@
   <title>Codex in Action</title>
   <link
     rel="shortcut icon"
-    href="{{ url_for('static', filename='dog.png') }}"
+    href="{{ url_for('static', filename='fig.jpg') }}"
   />
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
 </head>
 
 <body>
-  <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
+  <img src="{{ url_for('static', filename='fig.jpg') }}" class="icon" />
   <h3>Build my Notebook</h3>
   <form action="/" method="post">
     <input type="text" name="data_url" placeholder="Enter a link address" required />
