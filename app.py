@@ -20,6 +20,8 @@ def index():
             frequency_penalty=0,
             presence_penalty=0
         )
+        code = response.choices[0].text
+        generate_python_file(code)
         return redirect(url_for("index", result=response.choices[0].text))
 
     result = request.args.get("result")
@@ -30,3 +32,9 @@ def generate_prompt(data_url):
     return "\"\"\"\nfetch csv file at url '{}' and read into DataFrame\n\"\"\"".format(
         data_url
     )
+
+
+def generate_python_file(code):
+    with open('notebook_code.py','w') as f:
+        f.write(code)
+
