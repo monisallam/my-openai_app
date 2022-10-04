@@ -1,4 +1,4 @@
-import os
+import os, subprocess, random
 
 import openai
 from flask import Flask, redirect, render_template, request, url_for
@@ -35,6 +35,11 @@ def generate_prompt(data_url):
 
 
 def generate_python_file(code):
-    with open('notebook_code.py','w') as f:
+    file_name = 'notebook_code' + str(random.randint(0,1000))
+    notebook_name = file_name + '.ipynb'
+    file_name = file_name + '.py'
+    with open(file_name,'w') as f:
         f.write(code)
+        subprocess.run(["ipynb-py-convert",file_name,'output_notebooks/'+notebook_name])
+
 
