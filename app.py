@@ -40,6 +40,7 @@ def generate_python_file(code):
     file_name = file_name + '.py'
     with open(file_name,'w') as f:
         f.write(code)
-        subprocess.run(["ipynb-py-convert",file_name,'output_notebooks/'+notebook_name])
+        
+    subprocess.run(["ipynb-py-convert",file_name,'output_notebooks/'+notebook_name])
 
 
