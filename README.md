@@ -40,8 +40,8 @@ IMPORTANT - There will be output that is important. The JupyterLab container wil
 $ http://f8cd4b5f5d4a:8888/lab?token=15a691eadb6749ce978be9aacfb524e2fe9aab782df34044
 ```
 
-Your token value will be different. It is different each time a NEW container is built. If you use the same JupyterLab container for subsequent invocations, this will be a one time thing. You will need to navigate to http://localhost:10000/lab?token=<your-token-value>.
+Your token value will be different. It is different each time a NEW container is built. If you use the same JupyterLab container for subsequent invocations, this will be a one time thing. You will need to navigate to ```http://localhost:10000/lab?token=<your-token-value>```.
 
-8. Log in to the JupyterLab container at http://localhost:10000/lab?token=<your-token-value>. Each csv file that you supply the app will have a notebook contained in the ```work``` directory, which you can view in the JupyterLab console. The code generated will be different for each csv file, but it the Codex API is extremely impressive at being able to intelligently fetch, and make data readily usable.
+8. Log in to the JupyterLab container at ```http://localhost:10000/lab?token=<your-token-value>```. Each csv file that you supply the app will have a notebook contained in the ```work``` directory, which you can view in the JupyterLab console. The code generated will be different for each csv file, but it the Codex API is extremely impressive at being able to intelligently fetch, and make data readily usable.
 
  
