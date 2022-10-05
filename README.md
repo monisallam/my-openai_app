@@ -34,7 +34,7 @@ An improvement to this would be to add in the ability to read more than just csv
    ```
 This will start the application container, as well as the notebook container. The application can be reached at http://localhost:5000. Navigate to the url on your machine and you should see the application. Copy and paste a csv file url. Once python code is returned, you can keep feeding the application new files, and it will make API calls to the Codex API, and convert what is returned to a new Jupyter notebook file, contained in the Jupyter Lab container, ready to use. 
 
-**IMPORTANT - There will be output that is important. The JupyterLab container will require a token for authentication. This will look like
+**IMPORTANT - There will be output that is important. The JupyterLab container will require a token for authentication. This will look like**
 
 ```bash
 $ http://f8cd4b5f5d4a:8888/lab?token=15a691eadb6749ce978be9aacfb524e2fe9aab782df34044
