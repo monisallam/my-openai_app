@@ -1,0 +1,20 @@
+version: "3.7"
+services:
+  app:
+    build: .
+    container_name: app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - notebk
+    volumes:
+      - ${PWD}/output_notebooks:/app/output_notebooks
+
+  notebk:
+    image: jupyter/datascience-notebook:9e63909e0317
+    
+    ports:
+      - "10000:8888"
+    volumes:
+      - ${PWD}:/home/jovyan/work
+
