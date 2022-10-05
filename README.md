@@ -6,7 +6,8 @@ The application itself is very simple. It takes a link to a csv (for the purpose
 
 I believe part of the spirit, and value propisition, of the Codex API is to alleviate a developer from having to worry about time consuming, and repetitive coding tasks, such as data wrangling. This is why I thought this application would be a cool way to demonstrate this capability (allbeit in a slightly crude manner :))
 
-An improvement to this would be to add in the ability to read more than just csv files, as well as files that are not publicly acessible (a kaggle data set for example), where an API key may be required. The ability to read more than just csv files would require some more logic inside the application, as well as a different prompt inside the Codex API call. Also, adding more functionality to the app itself beyond being a single page would be a definite next step.
+An improvement to this would be to add in the ability to read more than just csv files, as well as files that are not publicly acessible (a kaggle data set for example), where an API key may be required. The ability to read more than just csv files would require some more logic inside the application, as well as a different prompt inside the Codex API call. This would give an output that is more usable immediately. In my tinkering with the Codex API, I noticed that if you are descriptive with things like file type(i.e. csv), the output will be way more readily usable.
+Also, adding more functionality to the app itself beyond being a single page would be a definite next step.
 
 ## Setup
 
