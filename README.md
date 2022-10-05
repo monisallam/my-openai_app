@@ -1,6 +1,8 @@
-# OpenAI API Quickstart - Python example app
+# Codex AI example application
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
+This is an example that utilizes a lot of the same code from the name generator app. It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework, which runs in a container, as well as a jupyter notebook, which also runs in a container. 
+
+The application itself is very simple. It takes a link to a csv (I have found that this works best 
 
 ## Setup
 
